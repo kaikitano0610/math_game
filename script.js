@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
         problemFormContainer.style.display = 'block';
         addItemBtn.style.display = 'block';
         generateProblemBtn.style.display = 'block';
+        paymentAmountInput.style.display = 'block'; // 支払う金額フォームを再表示
+        paymentDisplay.style.display = 'block'; // 支払う金額の表示を再表示
         generateProblemBtn.disabled = true;  // ボタンを無効化する
     }
 
@@ -157,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // 支払う金額フォームと表示も非表示にする
         paymentAmountInput.style.display = 'none';
-        paymentDisplay.style.display = 'none';
+        // paymentDisplay.style.display = 'none';
 
         const checkAnswerBtn = document.getElementById('check-answer-btn');
         checkAnswerBtn.addEventListener('click', function () {
