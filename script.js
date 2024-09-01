@@ -154,6 +154,10 @@ document.addEventListener('DOMContentLoaded', function () {
         problemFormContainer.style.display = 'none';
         addItemBtn.style.display = 'none';
         generateProblemBtn.style.display = 'none';
+        
+        // 支払う金額フォームと表示も非表示にする
+        paymentAmountInput.style.display = 'none';
+        paymentDisplay.style.display = 'none';
 
         const checkAnswerBtn = document.getElementById('check-answer-btn');
         checkAnswerBtn.addEventListener('click', function () {
@@ -168,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
 
     // ランダム問題の生成
     function generateRandomProblem() {
