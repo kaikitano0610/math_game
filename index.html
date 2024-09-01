@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お釣りの計算ゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- タイトル画面 -->
+        <div id="title-screen" class="screen active">
+            <h1>お釣りの計算ゲーム</h1>
+            <button id="create-problem-btn" class="btn">問題を作る</button>
+            <button id="solve-problem-btn" class="btn">問題を解く</button>
+        </div>
+
+        <!-- 問題を作る画面 -->
+        <div id="create-problem-screen" class="screen">
+            <button id="back-to-title-btn1" class="btn back-btn">タイトルに戻る</button>
+            <h2>問題を作る</h2>
+            <div id="problem-form-container">
+                <!-- 商品と金額のフォームがデフォルトで1つ表示される -->
+            </div>
+            <button id="add-item-btn" class="btn">商品を追加</button>
+            <label>支払う金額:
+                <input type="range" id="payment-amount" min="100" max="5000" step="5" value="100">
+                <span id="payment-display">100円</span>
+            </label>
+            <button id="generate-problem-btn" class="btn generate-btn" disabled>問題を作成</button>
+            <div id="error-message" class="error"></div>
+            <div id="generated-problem"></div>
+        </div>
+
+        <!-- 問題を解く画面 -->
+        <div id="solve-problem-screen" class="screen">
+            <button id="back-to-title-btn2" class="btn back-btn">タイトルに戻る</button>
+            <h2>問題を解く</h2>
+            <div id="random-problem"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

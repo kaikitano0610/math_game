@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #888;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.generate-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+input[type="range"] {
+    width: 50%;
+}
+
+.item-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    width: 60%;
+    margin-right: 10px;
+    text-align: left;
+    padding: 5px;
+}
+
+.item-price {
+    width: 30%;
+}
+
+.price-display {
+    margin-left: 5px;
+}
+
+#generated-problem, #random-problem {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
